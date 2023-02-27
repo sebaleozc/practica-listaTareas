@@ -11,19 +11,19 @@ export default function TasksList(){
 
   const addTask = task => {   /* the task is passed from Form */
     if(task.text.trim()){      /* string is not empty? */
-      task.text = task.text.trim(); /* remove empty spaces */
+      task.text = task.text.trim(); /* remove empty spaces. */  
       
       const updatedTasks = [task, ...tasks];
       setTasks(updatedTasks);
     }   
   }
 
-  const removeTask = (id) => {
+  const removeTask = id => {
     const updatedTasks = tasks.filter(task => task.id !== id);
     setTasks(updatedTasks);
   } 
 
-  const completeTask = (id) => {
+  const completeTask = id => {
     const updatedTasks = tasks.map(task => {
       if(task.id === id){
         task.complete = !task.complete;
@@ -38,7 +38,7 @@ export default function TasksList(){
       <Form onSubmit={addTask} />  
       <div className="tasksList__container">
         {
-          tasks.map( (task) => 
+          tasks.map( task => 
             <Tasks
               key={task.id}
               id={task.id}

@@ -3,7 +3,7 @@ import "../styles/form.css";
 import { v4 as uuidv4 } from "uuid";
 
                                   /*props from TaskList   */
-export default function FormIn ({ onSubmit }){
+export default function Form ({ onSubmit }){
 
   const [input, setInput] = useState("");
 
@@ -11,7 +11,7 @@ export default function FormIn ({ onSubmit }){
     setInput(e.target.value);
   }
 
-  const sendHandler = (e)=>{
+  const sendHandler = e =>{
       e.preventDefault();
       
       const newTask = {
