@@ -1,0 +1,30 @@
+
+.form__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__input{
+  width: 350px;
+  background-color: white;
+  font-size: 18px;
+  padding: 15px 30px 15px 15px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid green;
+  outline: none;
+}
+
+.form__button{
+  background-color: aqua;
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+  padding: 16px;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}

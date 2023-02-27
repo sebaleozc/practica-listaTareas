@@ -1,0 +1,51 @@
+
+.tasks__container{
+  width: 500px;
+  min-height: 60px;
+  background-color: rgb(60, 95, 95);
+  margin: 5px 0;
+  padding: 8px 15px 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.tasks__container:nth-child(6n + 1) {
+  background-color: rgb(53, 77, 77);
+}
+.tasks__container:nth-child(6n + 2) {
+  background-color: rgb(40, 52, 52);
+}
+.tasks__container:nth-child(6n + 3) {
+  background-color: rgb(26, 29, 29);
+}
+.tasks__container:nth-child(n + 4) {
+  background-color: rgb(16, 17, 17);
+}
+
+.tasks__text{
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  overflow-wrap: anywhere;
+}
+
+.tasks__icon{
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+/* se cambia las propiedades para los elementos que tengan AMBAS class */
+.tasks__container.complete{
+  background-color: rgb(105, 5, 105);
+  text-decoration: line-through;
+
+}
+
+
